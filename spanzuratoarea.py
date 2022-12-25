@@ -1,6 +1,5 @@
 import random
 import sys
-import os
 
 # a quit function
 def quit_function():
@@ -8,7 +7,11 @@ def quit_function():
 
 # a menu for selecting the game's difficulty
 def gamemode():
-    print('''alege dificultatea: \n 1 - EASY 6 vieti , cuvinte pana in 5 litere \n 2 - HARD 3 vieti cuvinte cu peste 6 litere \n "quit" ''')
+    print('''alege dificultatea: \n 
+    1 - EASY 6 vieti , cuvinte pana in 5 litere \n 
+    2 - HARD 3 vieti cuvinte cu peste 6 litere \n 
+    "quit" 
+    ''')
     difficulty = input('enter the difficulty = ')
     if difficulty == '1' or difficulty == '2':
         return difficulty
@@ -110,7 +113,7 @@ def status_display(difficulty):
     |          /|\  
     |         / | \ 
     |          /
-    /|\        /
+    /|\       /
     -----
     ''', '''
     -------------
@@ -120,7 +123,7 @@ def status_display(difficulty):
     |          /|\  
     |         / | \ 
     |          / \  
-    /|\        /   \ 
+    /|\       /   \ 
     -----
     ''']
     hard_list = [easy_list[0], easy_list[2], easy_list[4], easy_list[6]]
