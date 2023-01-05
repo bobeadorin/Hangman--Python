@@ -1,9 +1,5 @@
 import random
 import sys
-import os
-print("Working dir:", os.getcwd())
-
-# The main function
 
 
 def main():
